@@ -1,2 +1,3 @@
 Data <- read.csv("refine_original.csv")
-Data
+
+Data$company <- tolower(Data$company)

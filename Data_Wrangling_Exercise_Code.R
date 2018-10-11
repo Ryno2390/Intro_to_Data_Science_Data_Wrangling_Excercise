@@ -9,3 +9,5 @@ Data <- separate(Data, Product.code...number, c("Product.code", "Product.number"
 
 Product.category <- c("p" = "Smartphone", "v" = "TV", "x" = "Laptop", "q" = "Tablet")
 Data$Product.category <- Product.category[Data$Product.code]
+
+Data$full_address <- paste(Data$address, Data$city, Data$country, sep = ", ")

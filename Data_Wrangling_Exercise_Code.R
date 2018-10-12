@@ -54,4 +54,4 @@ product_tablet <- replace(Data$Product.category, Data$Product.category == "Table
 product_tablet <- replace(product_tablet, product_tablet != 1, 0)
 Data$product_tablet <- product_tablet
 
-Data
+write.csv(Data, file = "refine_clean.csv")
